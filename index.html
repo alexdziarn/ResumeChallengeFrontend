@@ -1,0 +1,84 @@
+﻿<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="yeet.css">
+<div id="header">
+    <label>View count: <span id="count"></span> </label>
+
+    <script>
+        console.log('about to fetch');
+        fetch('https://0enil1n3hl.execute-api.us-east-1.amazonaws.com/Prod/view')
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (data) {
+                document.getElementById('count').textContent = data.views;
+            })
+            .catch(function (err) {
+                console.log(err);
+            });
+    </script>
+
+</div>
+<div class="left"></div>
+<div class="stuff">
+    <br><br>
+    <link rel="stylesheet" href="yeet.css">
+    <h1>Resume</h1>
+    <h2>Alexander Dziarnowski</h2>
+    <hr />
+    <br>
+    <p class="head">Education</p>
+    <dl>
+        <dt><b>Virginia Polytechnic Institute and State University (Virginia Tech)</b></dt>
+        <dt>Blacksburg, VA(Aug 2016 - May 2020)</dt>
+        <dd>Bachelors of Science, Finance (Investment Management and CFA)</dd>
+        <dd>GPA: 3.1</dd>
+        <dt><b>Certifications</b></dt>
+        <dd>Salesforce Administrator (ADM 201): </dd>
+        <dd>AWS Solutions Architect Associate (SAA-C01): H3WBNTK2MJQQQMC3</dd>
+        <dd>AWS Developer Associate (DVA-C01): SW2FK68C3MB11ZGE</dd>
+        <dd>AWS SysOps Administrator Associate (SOA-C01): GFSZX232NMB11W3G</dd>
+    </dl>
+    <br>
+    <p class="head">Skills</p>
+    <dl>
+        <dt><b>Technical</b></dt>
+        <dd>Salesforce, AWS, Java, Microsoft Office, Excel Modeling, SQL</dd>
+        <dt><b>Interests</b></dt>
+        <dd>Investing, Fantasy Sports, Gaming</dd>
+    </dl>
+    <br>
+    <p class="head">Work Experience</p>
+    <dl>
+        <dt><b>Ampcus Incorporated - Finance Intern</b></dt>
+        <dt>Chantilly, VA (June 2019 - August 2019)</dt>
+        <dd>Worked with the Ampcus COO in exploring investment opportunities by connecting with prospective startup companies seeking funding</dd>
+        <dd>Analyzed financial data using Yahoo Finance, Morningstar, and Google search to evaluate company’s past and current performances; developed trend analysis, and projected results in making decisions</dd>
+        <dd>Assisted in Developing Socash upcoming IPO<cite><a href="https://www.socash.io/">(www.socash.io)</a></cite></dd>
+        <dd class="indent">Projected yearly return for Socash upcoming IPO</dd>
+        <dd class="indent">Developed a frontier analysis comparing the S&P 500 to all fintech stocks with an IPO in the past 4 years</dd>
+        <dd class="indent">Determined the optimal point of investment that each investor should contribute into the IPO</dd>
+        <dd class="indent">Gathered information to write part of the initial draft of the SEC S-1 form</dd>
+    </dl>
+    <br>
+    <p class="head">Competitions and Personal Projects</p>
+    <dl>
+        <dt><b>Benny's Social Media</b> <cite><a href="http://bennyfromblacksburg.com/">http://bennyfromblacksburg.com/</a></cite></dt>
+        <dt>(March 2020 - Present)</dt>
+        <dd>Developed a web server running on Amazon Linux AMI EC2 instances</dd>
+        <dd>Uploaded jpeg files to S3 and embedded the S3 file link in the web server’s HTML</dd>
+        <dd>Edited PHP and CSS files through a text editor</dd>
+        <dd>Created a MySQL database through Amazon RDS and managed the database through MySQL Workbench</dd>
+        <dd>Configured my web server to record user comments by reading text and then transferring the data over to my database. Then had my web server read from my database and list the text and time of the comments into the web page</dd>
+        <dd>Established my own domain using Route53</dd>
+        <dd>Routed traffic from Route53 to an ELB to my EC2 Instances</dd>
+        <dd>Managed security using IAM policies and followed the guidelines of the principle of least privilege</dd>
+        <dt><b>Virginia Tech Counter-Strike (Video Game Competition)</b></dt>
+        <dt>(August 2016 - May 2020)</dt>
+        <dd>Devised strategies followed out by teammates</dd>
+        <dd>Counter-strategized teams by evaluating demos and constructing specific game plans </dd>
+    </dl>
+</div>
+<div class="right"></div>
+<div id="footer">
+    <h2 id="name">Alex Dziarnowski</h2>
+</div>

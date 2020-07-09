@@ -1,0 +1,97 @@
+* {
+  max-width: 700px;
+  margin: auto;
+}
+br {
+   display: block;
+   margin: -5px 0;
+}
+div {
+  border-radius: 5px;
+}
+#header {
+  height: 40px;
+  width: 100%;
+  background-color: #ffcccc;
+  position: fixed;
+  z-index: 1;
+  font-size:8px;
+}
+
+#title {
+  margin-left: 3%;
+}
+
+#footer {
+  height: 50px;
+  width: 100%;
+  background-color: #ffcccc;
+  clear: both;
+  position: relative;
+}
+
+.left {
+  height: 1000px;
+  width: 45px;
+  background-color: #e0eeee;
+  float: left;
+  position: fixed;
+}
+
+.right {
+  height: 1000px;
+  width: 45px;
+  background-color: #e0eeee;
+  float: right;
+  position: inherit;
+}
+
+.stuff {
+  display: inline-block;
+  margin-top: 6px;
+  margin-left: 55px;
+  width: 75%;
+  height: 1000px;
+  font-family: 'Comic Sans MS';
+}
+dt {
+  font-size: 13px;
+}
+dd {
+  font-size: 11px;
+}
+dd::before {
+  content: "– ";
+}
+.head {
+  font-size: 20px;
+}
+
+label {
+  font-size: 14px;
+}
+#name {
+  font-family: Sacramento;
+  float: right;
+  margin-top: 10px;
+  margin-right: 4%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+.indent {
+  text-indent: 15px;
+}
+
+@media only screen and (max-width: 430px) {
+  .left,
+  .right {
+    display: none;
+  }
+  .stuff {
+    width: 100%;
+    margin-left: 10px;
+  }
+}
