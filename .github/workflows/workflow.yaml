@@ -6,7 +6,7 @@ on:
     - master
 
 jobs:
-  deploy code to s3:
+  deploy-code-to-s3:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
@@ -18,7 +18,7 @@ jobs:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         AWS_REGION: 'us-east-1'  
-  invalidate cloudfront cache:
+  invalidate-cloudfront-cache:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
