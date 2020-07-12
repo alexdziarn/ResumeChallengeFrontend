@@ -11,12 +11,12 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
 	display:block;
 }
 
-html, body {background: #181818; font-family: 'Lato', helvetica, arial, sans-serif; font-size: 16px; color: #222;}
+html, body {background: #181818; font-family: 'Lato'; font-size: 16px; color: #222;}
 
 .clear {clear: both;}
 
 #counter{
-	font-family: 'Lato', helvetica, arial, sans-serif; 
+	font-family: 'Lato'; 
 	font-size: 10px; 
 	color: #222;
 	background: #ededed;
@@ -54,14 +54,14 @@ dd::before {
 #name h1 {
 	font-size: 2.5em;
 	font-weight: 700;
-	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	font-family: 'Rokkitt';
 	margin-bottom: -6px;
 }
 
 #name h2 {
 	font-size: 2em;
 	margin-left: 2px;
-	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	font-family: 'Rokkitt';
 }
 
 #mainArea {
@@ -141,14 +141,14 @@ section:last-child {
 }
 
 .sectionTitle h1 {
-	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	font-family: 'Rokkitt';
 	font-style: italic;
 	font-size: 1.5em;
 	color: #cf8a05;
 }
 
 .sectionContent h2 {
-	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	font-family: 'Rokkitt';
 	font-size: 1.5em;
 	margin-bottom: -2px;
 }
