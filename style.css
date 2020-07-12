@@ -22,7 +22,7 @@ html, body {background: #181818; font-family: 'Lato'; font-size: 16px; color: #2
 	background: #ededed;
 }
 	
-dd {
+dd, p {
 	font-size: 0.85em;
 	line-height: 1.4em;
 	color: #444;
