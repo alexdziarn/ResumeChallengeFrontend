@@ -27,7 +27,7 @@ dd, p {
 	line-height: 1.4em;
 	color: #444;
 }
-dd::before {
+.dash::before {
 	content: "– ";
 }
 
@@ -176,25 +176,7 @@ section:last-child {
 .aws {
 	height: 70px;
 }
-.awsleft {
-	float: left;
 
-}
-
-.awsright {
-	float: right;
-	margin-right: 50px;
-}
-
-.salesforceleft {
-	float: left;
-}
-
-.salesforceright {
-	float: right;
-	margin-right: 125px;
-
-}
 .certs {
 	height: 60px;
 }
