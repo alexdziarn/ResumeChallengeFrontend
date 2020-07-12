@@ -39,9 +39,10 @@ dd::before {
 #cv {
 	width: 90%;
 	max-width: 1000px;
-	height:1550px;
+	
 	background: #f3f3f3;
 	margin: 30px auto;
+	overflow: hidden;
 }
 
 .mainDetails {
