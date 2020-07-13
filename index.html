@@ -19,17 +19,17 @@
     <div id="counter" class="quickFade">
 		<p>Views: <span id="count"></span></p>
 		<script>
-		console.log('about to fetch');
-		fetch('https://50o6bp17yi.execute-api.us-east-1.amazonaws.com/Prod/view')
-			.then(function (response) {
-				return response.json();
-			})
-			.then(function (data) {
-				document.getElementById('count').textContent = data.views;
-			})
-			.catch(function (err) {
-				console.log(err);
-			});
+      console.log('about to fetch');
+      fetch('https://50o6bp17yi.execute-api.us-east-1.amazonaws.com/Prod/view')
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (data) {
+          document.getElementById('count').textContent = data.views;
+        })
+        .catch(function (err) {
+          console.log(err);
+        });
 		</script>
 	</div>
     <div class="mainDetails">
@@ -115,7 +115,6 @@
             <h2>Virginia Polytechnic Institute and State University (Virginia Tech)</h2>
             <p class="subDetails">Blacksburg, VA (Aug 2016 - May 2020)</p>
             <dd class="dash">Bachelors of Science, Finance (Investment Management and CFA)</dd>
-            <dd class="dash">GPA: 3.1</dd>
           </article>
 
           <article>
