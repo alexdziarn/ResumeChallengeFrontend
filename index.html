@@ -1,180 +1,457 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-<title>Alexander Dziarnowski - Resume</title>
 
-<meta name="viewport" content="width=device-width"/>
-<meta name="description" content="The Resume of Alexander Dziarnowski."/>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">>
-<link type="text/css" rel="stylesheet" href="style.css">
-<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700' rel='stylesheet' type='text/css'>
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Alexander Dziarnowski - Website</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-<!--[if lt IE 9]>
-<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   <!-- Favicons
+	================================================== 
+	<link rel="shortcut icon" href="favicon.png" >-->
+
 </head>
-<body id="top">
-  <div id="cv">
-    <div id="counter" class="quickFade">
-		<p>Views: <span id="count"></span></p>
-		<script>
-      console.log('about to fetch');
-      fetch('https://50o6bp17yi.execute-api.us-east-1.amazonaws.com/Prod/view')
-        .then(function (response) {
-          return response.json();
-        })
-        .then(function (data) {
-          document.getElementById('count').textContent = data.views;
-        })
-        .catch(function (err) {
-          console.log(err);
-        });
-		</script>
-	</div>
-    <div class="mainDetails">
-		
-      <div id="headshot" class="quickFade">
-        <img src="headshot.jpg" alt="Alex" />
+
+<body>
+
+   <!-- Header
+   ================================================== -->
+   <header id="home">
+
+      <nav id="nav-wrap">
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+            <li><a class="smoothscroll" href="#about">About</a></li>
+	         <li><a class="smoothscroll" href="#resume">Resume</a></li>
+            <li><a class="smoothscroll" href="#portfolio">Works</a></li>
+            <li><a class="smoothscroll" href="#contact">Contact</a></li>
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+      <div class="row banner">
+         <div class="banner-text">
+            <h1 class="responsive-headline">Alexander Dziarnowski</h1>
+            <hr/>
+            <ul class="social">
+               <li><a href="https://github.com/alexdziarn"><i class="fa fa-github"></i></a></li>
+               <li><a href="https://www.linkedin.com/in/alexdziarnowski/"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+            <p>Views: <span id="count"></span></p>
+            <script>
+               console.log('about to fetch');
+               fetch('https://50o6bp17yi.execute-api.us-east-1.amazonaws.com/Prod/view')
+               .then(function (response) {
+                  return response.json();
+               })
+               .then(function (data) {
+                  document.getElementById('count').textContent = data.views;
+               })
+               .catch(function (err) {
+                  console.log(err);
+               });
+            </script>
+         </div>
       </div>
 
-      <div id="name">
-        <h1 class="quickFade delayTwo">Alex Dziarnowski</h1>
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
+
+   </header> <!-- Header End -->
+
+
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
+
+      <div class="row">
+
+         <div class="three columns">
+
+            <img class="profile-pic"  src="images/profilepic.jpg" alt="" />
+
+         </div>
+
+         <div class="nine columns main-col">
+
+            <h2>About Me</h2>
+
+            <p>I'm a recent college graduate looking for an entry-level position in either cloud computing or FinTech. 
+               I have experience in complex financial research, including analyzing financial statments, 
+               reviewing trends in the FinTech industry, and evaluating company performance compared to competitors. 
+               I also have knowledge and skills in cloud computing including Java, SQL, and Python. I am hard working, 
+               energetic, and eager to learn new skills. When COVID-19 hit and without having a job after graduation, I wanted to learn something new. 
+               After observing the current job market, I improved myself by obtaining Amazon Web Service (AWS) certifications
+               in Solutions Architect Associate, Developer Associate, and SysOps Administrator Associate.
+            </p>
+
+            <div class="row">
+
+               <div class="columns contact-details">
+
+                  <h2>Contact Details</h2>
+                  <p class="address">
+						   <span>Alexander Dziarnowski</span><br>
+						   <span>15089 Valhalla Court<br>
+						         Haymarket, VA 20169 US
+                     </span><br>
+						   <span>(703) 226-9911</span><br>
+                     <span>alexdziarn@gmail.com</span>
+					   </p>
+
+               </div>
+
+               <div class="columns download">
+                  <p>
+                     <a href="Alex Dziarnowski_Resume.pdf" class="button"><i class="fa fa-download"></i>Download Resume</a>
+                  </p>
+               </div>
+
+            </div> <!-- end row -->
+
+         </div> <!-- end .main-col -->
+
       </div>
 
-      <div id="contactDetails" class="quickFade delayFour">
-        <ul>
-          <li>e: <a href="mailto:alexdziarn@gmail.com" target="_blank">alexdziarn@gmail.com</a></li>
-          <li>w: <a href="http://alexdziarnowski.com">alexdziarnowski.com</a></li>
-          <li>m: (703)226-9911</li>
-        </ul>
+   </section> <!-- About Section End-->
+
+
+   <!-- Resume Section
+   ================================================== -->
+   <section id="resume">
+   <!-- Work Experience
+      ----------------------------------------------- -->
+      <div class="row work">
+
+         <div class="three columns header-col">
+            <h1><span>Work Experience</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Ampcus Incorporated</h3>
+                  <p class="info">Finance Intern <span>&bull;</span> <em class="date">June 2019 - August 2019</em></p>
+
+                  <li class="list">Worked with the Ampcus COO in exporing investment opportunities by connecting with prospective startup companies.</li>
+                  <li class="list">Analyzed financial data using Yahoo Finance, Morningstart, and Google search to evaluate company's past
+                  and current performances; developed trend analysis, and projected results in making decisions.</li>
+                  <li class="list">Assisted in developing Socash's IPO (<a href="Alex Dziarnowski_Resume.pdf">www.socash.io</a>)
+                     <li class="sub">Projected yearly return for Socash.</li>
+                     <li class="sub">Developed a frontier analysis comparing the S&P 500 to all fintech stocks with an IPO in the past 4 years.</li>
+                     <li class="sub">Determined the optimal point of investment for each investor.</li>
+                     <li class="sub">Gathered information to write part of the initial draft of the SEC S-1 form.</li>
+                  </li>
+                  
+
+               </div>
+
+            </div> <!-- item end -->
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Work -->
+   <!-- Skills
+      ----------------------------------------------- -->
+      <div class="row skill">
+
+         <div class="three columns header-col">
+            <h1><span>Skills</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <p></p>
+
+				<div class="bars">
+
+				   <ul class="skills">
+					   <li><em>Amazon Web Service</em></li>
+                  <li><em>Salesforce</em></li>
+						<li><em>Java</em></li>
+						<li><em>Microsoft Office</em></li>
+						<li><em>Excel Modeling</em></li>
+                  <li><em>SQL</em></li>
+                  <li><em>Python</em></li>
+					</ul>
+
+				</div><!-- end skill-bars -->
+
+			</div> <!-- main-col end -->
+
+      </div> <!-- End skills -->
+
+   
+
+   <!-- Education
+      ----------------------------------------------- -->
+      <div class="row education">
+
+         <div class="three columns header-col">
+            <h1><span>Education</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Virginia Tech</h3>
+                  <p class="info">B.S. Degree in Finance <span>&bull;</span> <em class="date">May 2020</em></p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Education -->
+   <!-- Certifications
+      ----------------------------------------------- -->
+      <div class="row skill">
+
+         <div class="three columns header-col">
+            <h1><span>Certifications</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <p></p>
+
+				<div class="bars">
+
+				   <ul class="skills">
+					   <li><em>Salesforce Administrator </li>
+                  <li><em>AWS Solutions Architect Associate </li>
+                  <li><em>AWS Developer Associate </li>
+                  <li><em>AWS SysOps Administrator Associate </li>
+					</ul>
+
+				</div><!-- end skill-bars -->
+
+			</div> <!-- main-col end -->
+
+      </div> <!-- End Certifications -->
+   </section> <!-- Resume Section End-->
+
+      
+
+
+      
+
+   <!-- Portfolio Section
+   ================================================== -->
+   <section id="portfolio">
+
+      <div class="row">
+
+         <div class="twelve columns collapsed">
+
+            <h1>Check Out Some of My Works.</h1>
+
+            <!-- portfolio-wrapper -->
+            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+
+          	   <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-01" title="">
+                        <img alt="" src="images/portfolio/benny.png">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Benny</h5>
+                              <p>Web Development</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-02" title="">
+                        <img alt="" src="images/portfolio/aws.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>AWS Cloud Resume Challenge</h5>
+                              <p>Web Development</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+            </div> <!-- portfolio-wrapper end -->
+
+         </div> <!-- twelve columns end -->
+
+
+         <!-- Modal Popup
+	      --------------------------------------------------------------- -->
+
+         <div id="modal-01" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/benny.png" alt="" />
+
+		      <div class="description-box">
+			      <h4>bennyfromblacksburg</h4>
+               <li>Developed a web server running on Amazon Linux AMI EC2 instances</li>
+               <li>Uploaded jpeg files to S3 and embedded the S3 file link in the web server’s HTML</li>
+               <li>Edited PHP and CSS files through a text editor</li>
+               <li>Created a MySQL database through Amazon RDS and managed the database through MySQL Workbench</li>
+               <li>Configured my web server to record user comments by reading text and then transferring the data over to my database. Then had my web server read from my database and list the text and time of the comments into the web page</li>
+               <li>Established my own domain using Route53</li>
+               <li>Routed traffic from Route53 to an ELB to my EC2 Instances</li>
+               <li>Managed security using IAM policies and followed the guidelines of the principle of least privilege</li>
+               <span class="categories"><i class="fa fa-tag"></i>AWS, Social Media, Webdesign</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="http://bennyfromblacksburg.com">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-01 End -->
+
+         <div id="modal-02" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/aws.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Cloud Resume Challenge</h4>
+			      <p class="subDetails"><cite><a href="https://cloudresumechallenge.dev/instructions/">Link to Challenge</a></cite></p>
+               <p class="subDetails"><cite><a href="https://dev.to/alexdziarn/my-thoughts-after-completing-the-cloud-resume-challenge-4a0g">Blog about this project</a></cite></p>
+               <li>Used AWS S3 static web hosting to store and host the front end</li>
+               <li>Protected data using encryption in transit by enabling https in cloudfront</li>
+               <li>Created a custom domain in route53 that points to the cloudfront distribution</li>
+               <li>Wrote javascript in html code to display a view count</li>
+               <li>Wrote a SAM (Serverless Application Model) template to implement IaC (infrastructure as code)</li>
+               <li>Included all serverless architectures such as DynamoDB, API Gateway, and Lambda in SAM</li>
+               <li>Used GitHub as a repository and configured GitHub Actions to appropriately communicate with AWS (CI/CD)</li>
+               <li>Created a Python function to test code before it is deployed from GitHub to AWS</li>
+               <span class="categories"><i class="fa fa-tag"></i>AWS, Web Development</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://alexdziarnowski.com/">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-02 End -->
+
+      </div> <!-- row End -->
+
+   </section> <!-- Portfolio Section End-->
+<!-- Contact Section
+   ================================================== -->
+   <section id="contact">
+
+      <div class="row section-head">
+
+         <div class="two columns header-col">
+
+            <h1><span>Get In Touch.</span></h1>
+
+         </div>
+
+         <div class="ten columns">
+
+            <div class="widget widget_contact">
+
+               <h4>Address and Phone</h4>
+               <p class="address">
+                  Alexander Dziarnowski<br>
+                  15089 Valhalla Court <br>
+                  Haymarket, VA 20169 US<br>
+                  <span>(703) 226-9911</span>
+                  <span>alexdziarn@gmail.com</span>
+               </p>
+
+            </div>
+
+         </div>
+
       </div>
-      <div class="clear"></div>
-    </div>
 
-    <div id="mainArea" class="quickFade delayFive">
-      <section>
-        <article>
-          <div class="sectionTitle">
-            <h1>Personal Profile</h1>
-          </div>
 
-          <div class="sectionContent">
-            <p>Hey everyone, I'm a recent college graduate looking for an entry-level job in tech.</p>
-          </div>
-        </article>
-        <div class="clear"></div>
-      </section>
+   </div>
 
-      <section>
-        <div class="sectionTitle">
-          <h1>Work Experience</h1>
-        </div>
+</section> <!-- Contact Section End-->
 
-        <div class="sectionContent">
-          <article>
-            <h2>Finance Intern at Ampcus Incorporated</h2>
-            <p class="subDetails">Chantilly, VA (June 2019 - August 2019)</p>
-            <dd class="dash">Worked with the Ampcus COO in exploring investment opportunities by connecting with prospective startup companies seeking funding</dd>
-            <dd class="dash">Analyzed financial data using Yahoo Finance, Morningstar, and Google search to evaluate company’s past and current performances; developed trend analysis, and projected results in making decisions</dd>
-            <dd class="dash">Assisted in Developing Socash upcoming IPO <cite><a href="https://www.socash.io/">(www.socash.io)</a></cite></dd>
-            <dd class="dash" class="indent">Projected yearly return for Socash upcoming IPO</dd>
-            <dd class="dash" class="indent">Developed a frontier analysis comparing the S&P 500 to all fintech stocks with an IPO in the past 4 years</dd>
-            <dd class="dash" class="indent">Determined the optimal point of investment that each investor should contribute into the IPO</dd>
-            <dd class="dash" class="indent">Gathered information to write part of the initial draft of the SEC S-1 form</dd>
-          </article>
-        </div>
-        <div class="clear"></div>
-      </section>
 
-      <section>
-        <div class="sectionTitle">
-          <h1>Key Skills</h1>
-        </div>
 
-        <div class="sectionContent">
-          <ul class="keySkills">
-            <li>AWS</li>
-            <li>Salesforce</li>
-            <li>Java</li>
-            <li>Microsoft Office</li>
-            <li>Excel Modeling</li>
-            <li>SQL</li>
-            <li>Python</li>
-          </ul>
-        </div>
-        <div class="clear"></div>
-      </section>
+   <!-- footer
+   ================================================== -->
+   <footer>
 
-      <section>
-        <div class="sectionTitle">
-          <h1>Education</h1>
-        </div>
+      <div class="row">
 
-        <div class="sectionContent">
-          <article>
-            <h2>Virginia Polytechnic Institute and State University (Virginia Tech)</h2>
-            <p class="subDetails">Blacksburg, VA (Aug 2016 - May 2020)</p>
-            <dd class="dash">Bachelors of Science, Finance (Investment Management and CFA)</dd>
-          </article>
+         <div class="twelve columns">
 
-          <article>
-            <h2>Certifications</h2>
-              <dl>
-                <dt class="subDetails">Amazon Web Service</dt>
-                    <dd class="dash">Solutions Architect Associate (SAA-C01): H3WBNTK2MJQQQMC3</dd>
-                    <dd class="dash">Developer Associate (DVA-C01): SW2FK68C3MB11ZGE</dd>
-                    <dd class="dash">SysOps Administrator Associate (SOA-C01): GFSZX232NMB11W3G</dd>
-                    <dd><img src="AWS-SolArchitect-Associate.png" class="certs"></img>
-                        <img src="AWS-Developer-Associate.png" class="certs"></img>
-                        <img src="AWS-SysOpAdmin-Associate.png" class="certs"></img>
-                    </dd>
-              </dl>
-              <dl>
-                <dt class="subDetails">Salesforce</dt>
-                    <dd class="dash">Administrator (ADM 201): 20869409</dd>
-                    <dd>
-                      <img src="salesforceadmin.jpg" class="certs"></img>
-                    </dd>
-              </dl>      
-          </article>
-        </div>
-        <div class="clear"></div>
-      </section>
-      <section>
-		<div class="sectionTitle">
-          <h1>Personal Projects</h1>
-        </div>
-		
-		<div class="sectionContent">
-		  <article>
-			<h2>Benny's Website <cite><a href="http://bennyfromblacksburg.com/">http://bennyfromblacksburg.com/</a></cite></h2>
-				<p class="subDetails">(April 2020 - Present)</p>
-					<dd class="dash">Developed a web server running on Amazon Linux AMI EC2 instances</dd>
-					<dd class="dash">Uploaded jpeg files to S3 and embedded the S3 file link in the web server’s HTML</dd>
-					<dd class="dash">Edited PHP and CSS files through a text editor</dd>
-					<dd class="dash">Created a MySQL database through Amazon RDS and managed the database through MySQL Workbench</dd>
-					<dd class="dash">Configured my web server to record user comments by reading text and then transferring the data over to my database. Then had my web server read from my database and list the text and time of the comments into the web page</dd>
-					<dd class="dash">Established my own domain using Route53</dd>
-					<dd class="dash">Routed traffic from Route53 to an ELB to my EC2 Instances</dd>
-					<dd class="dash">Managed security using IAM policies and followed the guidelines of the principle of least privilege</dd>
-			<h2>Resume Challenge <cite><a href="https://alexdziarnowski.com/">https://alexdziarnowski.com/</a></cite></h2>			
-        <p class="subDetails">(July 2020 - Present)</p>
-        <p class="subDetails"><cite><a href="https://cloudresumechallenge.dev/instructions/">Link to Challenge</a></cite></p>
-        <p class="subDetails"><cite><a href="https://dev.to/alexdziarn/my-thoughts-after-completing-the-cloud-resume-challenge-4a0g">Blog about this project</a></cite></p>
-					<dd class="dash">Used AWS S3 static web hosting to store and host the front end</dd>
-          <dd class="dash">protected data using encryption in transit by enabling https in cloudfront</dd>
-          <dd class="dash">Created a custom domain in route53 that points to the cloudfront distribution</dd>
-          <dd class="dash">Wrote javascript in html code to display a view count in the top left</dd>
-          <dd class="dash">Wrote a SAM (Serverless Application Model) template to implement IaC (infrastructure as code)</dd>
-          <dd class="dash">Included all serverless architectures such as DynamoDB, API Gateway, and Lambda in SAM</dd>
-          <dd class="dash">Used GitHub as a repository and configured GitHub Actions to appropriately communicate with AWS (CI/CD)</dd>
-          <dd class="dash">Created a Python function to test code before it is deployed from GitHub to AWS</dd>
-		  </article>
-		</div>
-	  </section>
-    </div>
-	  
-</div>
+            <ul class="social-links">
+               <li><a href="https://github.com/alexdziarn"><i class="fa fa-github"></i></a></li>
+               <li><a href="https://www.linkedin.com/in/alexdziarnowski/"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+
+            <ul class="copyright">
+               <li>&copy; Copyright 2014 CeeVee</li>
+               <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>   
+            </ul>
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+
 </body>
 
 </html>
